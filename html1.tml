@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interactiva - Angell Muñoz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Angell Muñoz</h1>
+        <p id="message">Hola Mundo</p>
+
+        <div class="buttons">
+            <button onclick="changeLanguage('es')">Español</button>
+            <button onclick="changeLanguage('ja')">Japonés</button>
+            <button onclick="changeLanguage('en')">Inglés</button>
+            <button onclick="changeLanguage('pt')">Portugués</button>
+        </div>
+
+        <div class="themes">
+            <button onclick="changeTheme('white')">Blanco</button>
+            <button onclick="changeTheme('navy')">Azul Marino</button>
+            <button onclick="changeTheme('crimson')">Tinto</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

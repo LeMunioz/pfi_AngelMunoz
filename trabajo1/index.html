@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Muñoz</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Angel Muñoz</h1>
+        <p id="greeting">Hola mundo</p>
+    </header>
+    <nav>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">Inglés</button>
+        <button onclick="changeLanguage('jp')">Japonés</button>
+        <button onclick="changeLanguage('cn')">Chino</button>
+        <button onclick="changeLanguage('fr')">Francés</button>
+        <button onclick="changeLanguage('pt')">Portugués</button>
+    </nav>
+    <button onclick="changeTheme()">Cambiar tema</button>
+    <script>
+        const greetings = {
+            es: "Hola mundo",
+            en: "Hello world",
+            jp: "こんにちは世界",
+            cn: "你好，世界",
+            fr: "Bonjour le monde",
+            pt: "Olá mundo"
+        };
+        function changeLanguage(lang) {
+            document.getElementById('greeting').textContent = greetings[lang] || greetings['es'];
+        }
+        let theme = 'light';
+        function changeTheme() {
+            if (theme === 'light') {
+                document.body.style.backgroundColor = '#2c3e50';
+                document.body.style.color = 'white';
+                theme = 'dark';
+            } else if (theme === 'dark') {
+                document.body.style.backgroundColor = '#800000';
+                document.body.style.color = 'white';
+                theme = 'maroon';
+            } else {
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                theme = 'light';
+            }
+        }
+    </script>
+</body>
+</html>
