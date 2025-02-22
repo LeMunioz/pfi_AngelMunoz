@@ -1,0 +1,104 @@
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1{
+        color:rgb(240, 205, 64);
+        font-size: 50px;
+        margin-left: 8px;
+    }
+    h2{
+        color:rgb(228, 184, 74);
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .cabecera{
+        
+        border-radius: 14px;
+        background-color:maroon;
+        border: 2px black;
+        
+        margin-top: 8px;
+        padding: 4px;
+    }
+    .cabecera h1{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    /* aqui la barra de navegacion */
+    .navegacion{
+        border: 2px dotted black;
+        border-style: groove;
+        border-radius: 18px;
+        box-shadow: 5px -6px 10px 20px rgba(255, 255, 129, 0.71);
+        background-color: red;
+        margin-left: 8px;
+        margin-right: 25%;    
+
+    }
+    .navegacion li{       
+        display:inline-block; 
+    }
+
+    /*  aqui esta el cuerpo */
+    .container{
+        width: 75%;
+        float:left;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 8px;
+        background-image: url('../img/OIP.jpg');
+        background-color: rgb(171, 6, 48);
+        border: 3px black;
+        color: #FFFF;
+    }
+    .barrita{
+        background-color: aliceblue(245, 243, 244);
+        border: 2px black;
+    }
+    
+    div{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    /* pie de pagina */
+    div footer{
+        background-color: crimson;
+        margin: 10px
+
+    /* barra lateral */    
+    }
+    .barralateral{
+        background-color: crimson;
+        border: 2px;
+        border-radius: 8px;
+        width: 25%;
+        float: right;
+        color: gold;
+        font-weight: 400;
+    }
+    .pie{
+        background-color: crimson;
+        border: 2px;
+        border-radius: 8px;
+        width: 25%;
+    }
+
+/* links */
+a{
+    text-decoration: none;
+
+    font-size: 20px;
+    color: greenyellow;
+}
+a:visited{
+    color: greenyellow
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+    font-size: 40px;
+    transition: .3s;
+
+}
