@@ -5,30 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="author" content="Angel Eduardo Muñoz Perez" meta>
     <title>blog de Muñoz</title>
+    <link rel="stylesheet" href="nosonestilos/mstyles.css"> 
 </head>
 
 
 <body>
     <!-- AQUI ESTA LA CABECERA -->
      <div>
-        <header>
+        <header class="cabecera">
             <h1> EL BLOG DE MUÑOZ</h1>
         </header>
      </div>
+
     <!-- AQUI ESTA LA BARRA DE NAVEGACION DE ARRIBA -->
-     <nav>
-        <img src="/img/cualtos-rojo.png" alt="Ingenieria en Computacion 25A" width="100" height="80">
-        <ul>
-            <li>Sobre mi</li>
-            <li>Juegos</li>
-            <li>Musica</li>
-            <li>Series</li>
-            <li>Estudios</li>
-        </ul>
-     </nav> 
+        <nav class ="navegacion">
+            <img src="/img/cualtos-rojo.png" alt="Ingenieria en Computacion 25A" width="100" height="80">
+            <ul>
+                <a href="#1"> <li>Sobre mi</li> </a>
+                <a href="#2"><li>Juegos</li> </a>
+                <a href="#3"><li>Musica</li> </a>
+                <a href="#4"><li>Series</li> </a>
+                <a href="#5"><li>Estudios</li> </a>
+            </ul>
+        </nav> 
+
+    <div class="estructurainterna">    
     <!-- EL MENU LATERAL IZQUIERDO -->
-     <aside>
+    <aside class ="barrita">
         <a href="https://www.instagram.com/_angelmunioz/"><p>Mi instagram</p></a>
-     </aside> 
+    </aside> 
+
+    <!-- EL CUERPO PRINCIPAL --> 
+    <section class ="cuadroprincipal">
+        <!-- primer apartado (sobre mi) -->
+            <article id="1">
+                <hgroup>
+                    <h2> SOBRE MI </h2>
+                    <p> </p>   
+                </hgroup>
+            </article>
+
+        <!-- fotos -->
+            <div class="image-container">
+                <img src="img/f1.jpg" alt="Imagen 1">
+                <img src="img/f2.jpg" alt="Imagen 2">
+                <img src="img/f3.jpg" alt="Imagen 3">
+                <img src="img/f4.jpg" alt="Imagen 4">
+                <img src="img/f5.jpg" alt="Imagen 5">
+                <img src="img/f6.jpg" alt="Imagen 6">
+            </div>
+        <!-- segundo apartado (juegos favoritos) -->
+            <article id="2">
+                <hgroup>
+                    <h2> MIS JUEGOS FAVORITOS</h2>
+                    <a href="juegos.html"><p> ver mas</p></a>
+                </hgroup>
+            </article>
+        <!-- tercer apartado (Musica favorita) -->
+            <article id="3">
+                <hgroup>
+                    <h2> MI MUSICA FAVORITA</h2>
+                    <a href="musica.html"><p> ver mas</p></a>
+                </hgroup>
+            </article>
+        <!-- cuarto apartado (Series favoritas)-->
+            <article id="4">
+                <hgroup>
+                    <h2> MIS SERIES FAVORITAS</h2>
+                    <a href="series.html"><p> ver mas</p></a>
+                </hgroup>
+            </article>
+        <!-- quinto apartado (Area de estudios)-->
+            <article id="5">
+                <hgroup>
+                    <h2> MIS ESTUDIOS</h2>
+                    <a href="estudios.html"><p> ver mas</p></a>
+                </hgroup>
+            </article>
+    </section>
+    </div>
+
+    <!-- EL PIE DE PAGINA-->
+    <footer class ="piedepagina">
+        All right reserved &copy;
+        <a href="mailto:snesmunoz9@gmail.com">Angel Muñoz</a>
+    </footer>
+
 </body>
 </html>
