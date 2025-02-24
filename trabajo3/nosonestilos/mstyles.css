@@ -41,7 +41,7 @@
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
-    margin-bottom: 50%;
+    height: 90px;
 }
 
 /* estilos de hipervinculos */
@@ -66,10 +66,27 @@ a {
     gap: 10px; /* Espacio entre las imágenes */
     margin: 20px 0; /* Margen superior e inferior */
 }
+/* imagenes del apartado de juegos */
+.lista-juegos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0; /* Elimina el padding predeterminado de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+}
+.lista-juegos li {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+.lista-juegos img {
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
 /* Estilos para las imágenes */
 .image-container img {
-    width: 150px; /* Ancho fijo para todas las imágenes */
-    height: 150px; /* Alto fijo para todas las imágenes */
+    width: 160px; /* Ancho fijo para todas las imágenes */
+    height: 175px; /* Alto fijo para todas las imágenes */
     object-fit: cover; /* Recorta la imagen para que se ajuste al tamaño */
     border-radius: 10px; /* Bordes redondeados (opcional) */
 }
