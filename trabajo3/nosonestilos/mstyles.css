@@ -93,7 +93,7 @@ body{
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
-    height: 200px;
+    height: 190px;
 }
 .imagen-hover {
     width: 60px;
@@ -109,9 +109,6 @@ body{
 
 
 /* Estilo del espacio principal */
-
-   /* background-color: rgb(62, 2, 31);*/
-
 .cuadroprincipal {
     background-color: rgb(201, 48, 114);
     border: 8px double black;
@@ -119,7 +116,25 @@ body{
     margin-left: 20px; 
     padding: 10px;
 }
+/*secciones de cada articulo dentro del cuerpo */
+.cuadroprincipal 1{
+    border: 1px black;
+}
+2{
 
+}
+3{
+
+}
+4{
+
+}
+5{
+
+}
+6{
+
+}
 /* Estilos para el contenedor de imágenes de SOBRE MI*/
 .image-container {
     background-color: white;
