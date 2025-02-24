@@ -1,18 +1,62 @@
 *{
     font-family: 'Courier New', Courier, monospace;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+/*FUENTE DESCARGADA */
+@font-face {
+    font-family: "Forta.ttf"; /* Nombre que le darás a la fuente */
+    src: url('../documento/forta/Forta.ttf') format('truetype'); /* Ruta al archivo .ttf */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal; /* Estilo (normal, italic, etc.) */
+}
+
+/* estilos de hipervinculos */
+a {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(230, 241, 108);
+}
+a:hover{
+    font-size: 25px;
+    transition: .3s;
+    color: rgb(191, 218, 81);
+}
+.navegacion a{
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 200;
+}
+.navegacion a:hover{ 
+    text-decoration: underline;
+    font-size: 45px;
+    transition: .3s;
+}
 
 /* Estilos de PAGINA PRINCIPAL */
+body{
+    background-image: url("../img/fondo.jpg");
+}
 /* Estilo de encabezado */
 .cabecera{
-    border: 4px groove black;
+    font-family: "Forta.ttf", sans-serif;
+    color: white;
+    background-color: rgb(88, 15, 45);
+    border: 6px groove black;
     margin-bottom: 12px;
     padding: 20px;
 }
 
 /* Estilo de superior de navegacion*/
 .navegacion{
-    border: 2px double black;
+    background-color: rgb(212, 237, 51) ;
+    border: 4px outset rgb(115, 129, 52);
     border-radius: 18px;
     margin-bottom: 10px;
     margin-left: 8px;
@@ -27,6 +71,13 @@
 .navegacion img{
     height: 100%;
 }
+.navegacion a{
+    color: rgb(104, 21, 50);
+}
+.navegacion a:hover{
+    color: rgb(159, 22, 83);
+}
+
 
 /* para definir el manu lateral y la parte principal */ 
 .estructurainterna{
@@ -36,43 +87,64 @@
 
 /* Estilo de la barra lateral izquierda */
 .barrita {
+    background-color: white;
     width: 15%; /* Ancho de la barra lateral */
-    border: 6px double black;
+    border: 6px double rgb(115, 129, 52);
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
-    height: 90px;
+    height: 200px;
+}
+.imagen-hover {
+    width: 60px;
+    height: 120px;
+    background-image: url("../img/c1.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagen-hover:hover {
+    background-image: url("../img/c2.png");
 }
 
-/* estilos de hipervinculos */
-a {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-}
 
 /* Estilo del espacio principal */
+
+   /* background-color: rgb(62, 2, 31);*/
+
 .cuadroprincipal {
+    background-color: rgb(201, 48, 114);
     border: 8px double black;
     flex: 1; /* Ocupa el espacio restante */
     margin-left: 20px; 
     padding: 10px;
 }
-/* Estilos para el contenedor de imágenes */
+
+/* Estilos para el contenedor de imágenes de SOBRE MI*/
 .image-container {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px; /* Espacio entre las imágenes */
     margin: 20px 0; /* Margen superior e inferior */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;  
 }
-/* imagenes del apartado de juegos */
+
+
+/* imagenes del apartado de JUEGOS */
 .lista-juegos {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
     gap: 20px; /* Espacio entre los elementos */
     padding: 0; /* Elimina el padding predeterminado de la lista */
     list-style: none; /* Elimina los puntos de la lista */
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
 }
 .lista-juegos li {
     display: flex;
@@ -91,9 +163,32 @@ a {
     border-radius: 10px; /* Bordes redondeados (opcional) */
 }
 
+/* estilos de las imagenes y texto en MUSICA FAVORITA */ 
+.contenedor-texto-imagenes {
+    display: flex; /* Crea un contenedor flexible */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px; /* Espacio entre las imágenes y el texto */
+}
+.imagenes-izquierda {
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+.imagenes-izquierda img {
+    width: 170px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+}
+.texto-derecha {
+    flex: 1; /* El texto ocupa el espacio restante */
+}
 
 /* Estilo del pie*/
 .piedepagina{
+    background-color: rgb(212, 237, 51);
     clear: both; 
     align-items: center;
+}
+.piedepagina a{
+    color: rgb(88, 15, 45);
 }
