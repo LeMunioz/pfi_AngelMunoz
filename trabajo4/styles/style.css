@@ -7,7 +7,7 @@
     justify-content: center; /* Centra el texto horizontalmente */
     font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
     font-weight: bold; /* Opcional: para que el texto sea más grueso */
-    background-color: #005377; /* Color de fondo del header */
+    background-color: #524195; /* Color de fondo del header */
     color: white; /* Color del texto */
 }
 
@@ -80,13 +80,32 @@
     border-radius: 5px;
 }
 #divtitulo{
-    background-color: #53b89d;
+    background-color: #005377;
+    color: white;
     padding-left: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+#divsubtitulo{
+    background-color: #ffffff;
+    padding-left: 15px;s
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#divsubsubtitulo{
+    background-color: #64d8b9;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 .image-container {
     margin-bottom: 15px; /* Espacio entre las imágenes */
@@ -101,9 +120,12 @@ figure {
     text-align: center;
     margin: 0;
 }
-
 figcaption {
     margin-top: 8px;
     font-size: 14px;
     color: #555;
+}
+.carousel-item img { /*para el carrusel que esta en dibujos*/ 
+    max-width: 100%;
+    height: auto;
 }
