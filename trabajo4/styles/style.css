@@ -1,0 +1,109 @@
+
+/* HEADER */
+.container-fluid .row .col-12 {
+    height: 80px; /* Aumenta la altura del header */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
+    font-weight: bold; /* Opcional: para que el texto sea más grueso */
+    background-color: #005377; /* Color de fondo del header */
+    color: white; /* Color del texto */
+}
+
+
+/* NAVBAR */
+.navbar-with-banner {
+    background-image: url("../img/banner.png"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    min-height: 500px; /* Altura mínima del contenedor */
+    position: relative; /* Necesario para posicionar el contenido */
+}
+
+.navbar-with-banner .container {
+    position: absolute; /* Posiciona el contenido de manera absoluta */
+    top: 0; /* Lo pega a la parte superior */
+    left: 0; /* Lo pega a la izquierda */
+    right: 0; /* Lo pega a la derecha */
+    padding-top: 20px; /* Espacio superior para separar el contenido del borde */
+}
+
+.navbar-with-banner .navbar-nav {
+    margin-top: 0; /* Elimina cualquier margen superior */
+    padding-top: 0; /* Elimina cualquier padding superior */
+}
+
+.navbar-with-banner .navbar-nav .nav-link {
+    color: white !important; /* Color del texto en blanco */
+}
+
+
+/* MENU IZQUIERDO */
+#menui{
+    border-radius: 20px;
+    background-color: rgb(240, 248, 248);
+   
+}
+#menui2{
+    border-radius: 20px;
+    background-color: rgb(227, 243, 243);
+    margin-bottom: 40px;
+    
+}
+#imagenchica{
+    height: 50%;
+    width: 50%;
+}
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+}
+.imagen-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.contenedor-imagen:hover .imagen-principal {
+    opacity: 0; /* Oculta la imagen original */
+}
+.contenedor-imagen:hover .imagen-hover {
+    opacity: 1; /* Muestra la imagen de hover */
+}
+
+
+/* CONTENIDO */
+#apartadoprincipal{
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+}
+#divtitulo{
+    background-color: #53b89d;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.image-container {
+    margin-bottom: 15px; /* Espacio entre las imágenes */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+}
+.image-container img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+}
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}

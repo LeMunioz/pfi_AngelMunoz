@@ -20,12 +20,12 @@ a {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     font-size: 20px;
-    color: rgb(230, 241, 108);
+    color: rgb(239, 210, 69);
 }
 a:hover{
     font-size: 25px;
     transition: .3s;
-    color: rgb(191, 218, 81);
+    color: rgb(206, 176, 59);
 }
 .navegacion a{
     font-family: Verdana, sans-serif;
@@ -35,7 +35,7 @@ a:hover{
 }
 .navegacion a:hover{ 
     text-decoration: underline;
-    font-size: 45px;
+    font-size: 32px;
     transition: .3s;
 }
 
@@ -47,7 +47,7 @@ body{
 .cabecera{
     font-family: "Forta.ttf", sans-serif;
     color: white;
-    background-color: rgb(88, 15, 45);
+    background-color: rgb(42, 53, 174);
     border: 6px groove black;
     margin-bottom: 12px;
     padding: 20px;
@@ -55,8 +55,8 @@ body{
 
 /* Estilo de superior de navegacion*/
 .navegacion{
-    background-color: rgb(212, 237, 51) ;
-    border: 4px outset rgb(115, 129, 52);
+    background-color: rgb(51, 237, 138) ;
+    border: 4px outset rgb(30, 105, 54);
     border-radius: 18px;
     margin-bottom: 10px;
     margin-left: 8px;
@@ -72,10 +72,10 @@ body{
     height: 100%;
 }
 .navegacion a{
-    color: rgb(104, 21, 50);
+    color: rgb(94, 61, 21);
 }
 .navegacion a:hover{
-    color: rgb(159, 22, 83);
+    color: rgb(157, 102, 40);
 }
 
 
@@ -89,7 +89,7 @@ body{
 .barrita {
     background-color: white;
     width: 15%; /* Ancho de la barra lateral */
-    border: 6px double rgb(115, 129, 52);
+    border: 6px double rgb(114, 231, 149);
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
@@ -98,7 +98,7 @@ body{
 .imagen-hover {
     width: 60px;
     height: 120px;
-    background-image: url("../img/c1.png");
+    background-image: url("../img/");
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
@@ -110,31 +110,16 @@ body{
 
 /* Estilo del espacio principal */
 .cuadroprincipal {
-    background-color: rgb(201, 48, 114);
+    background-color: rgb(81, 94, 233);
     border: 8px double black;
+    width: 80%;
+    float: right;
     flex: 1; /* Ocupa el espacio restante */
     margin-left: 20px; 
     padding: 10px;
 }
 /*secciones de cada articulo dentro del cuerpo */
-.cuadroprincipal 1{
-    border: 1px black;
-}
-2{
 
-}
-3{
-
-}
-4{
-
-}
-5{
-
-}
-6{
-
-}
 /* Estilos para el contenedor de imágenes de SOBRE MI*/
 .image-container {
     background-color: white;
@@ -200,10 +185,10 @@ body{
 
 /* Estilo del pie*/
 .piedepagina{
-    background-color: rgb(212, 237, 51);
+    background-color: rgb(51, 237, 119);
     clear: both; 
     align-items: center;
 }
 .piedepagina a{
-    color: rgb(88, 15, 45);
+    color: rgb(128, 62, 20);
 }
